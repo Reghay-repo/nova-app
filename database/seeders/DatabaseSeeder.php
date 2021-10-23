@@ -21,5 +21,10 @@ class DatabaseSeeder extends Seeder
             'email' => 'oussama@gmail.com',
             'password' => Hash::make('password')
         ]);
+
+
+           $this->call([
+            MovieSeeder::class
+        ]);
     }
 }

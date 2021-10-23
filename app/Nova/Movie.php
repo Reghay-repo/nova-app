@@ -41,6 +41,10 @@ class Movie extends Resource
     {
         return [
             ID::make(__('ID'), 'id')->sortable(),
+            ID::make(__('name'), 'name')->sortable(),
+            ID::make(__('poster'), 'poster')->sortable(),
+            ID::make(__('imdb_id'), 'review')->sortable(),
+            ID::make(__('user_id'), 'user_id')->sortable()
         ];
     }
 

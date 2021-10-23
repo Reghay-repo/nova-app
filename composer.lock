@@ -4,8 +4,44 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "01ea80e63b4703f0e2ec3bb440018be6",
+    "content-hash": "06a4261cac2b339144e1f4fe3347b702",
     "packages": [
+        {
+            "name": "acme/settings",
+            "version": "dev-setting",
+            "dist": {
+                "type": "path",
+                "url": "./nova-components/Settings",
+                "reference": "2cac90a79c75bcedff5e830eaa294ec212506498"
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Acme\\Settings\\ToolServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Acme\\Settings\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "A Laravel Nova tool.",
+            "keywords": [
+                "laravel",
+                "nova"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
         {
             "name": "asm89/stack-cors",
             "version": "v2.0.3",
